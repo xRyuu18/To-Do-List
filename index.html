@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="todo rounded-4">
+            <h2 class="d-flex">To-Do List <i class="bi bi-card-checklist ms-3 mb-4"></i></h2>
+            <div class="d-flex justify-content-between ps-4 mb-4 rounded-5" id="row">
+                <input type="text" id="input-box" placeholder="Add your text" class="border-0 bg-transparent p-2">
+                <button class="border-0 py-1 px-4 rounded-5 bg-danger bg-opacity-75 text-light" id="add" onclick="Addbtn()">Add</button>
+            </div>
+            <ul id="list">
+                <!-- <li class="fs-5 pt-1 pe-1 pb-1 ps-3 user-select-none position-relative checked">task 1</li>
+                <li class="fs-5 pt-1 pe-1 pb-1 ps-3 user-select-none position-relative">task 2</li>
+                <li class="fs-5 pt-1 pe-1 pb-1 ps-3 user-select-none position-relative">task 3</li> -->
+            </ul>
+            <div class="d-flex justify-content-evenly">
+                <button onclick="clearItems()" class="border-0 py-1 px-4 rounded-5 bg-warning bg-opacity-75 clear-btn">Clear Completed</button>
+                <button onclick="clearAll()" class="border-0 py-1 px-4 rounded-5 bg-danger text-light">Clear All</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
